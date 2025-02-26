@@ -1,0 +1,12 @@
+/* Webfont: TFWastedGrowth-Blur */@font-face {
+    font-family: 'TFWastedGrowthBlur';
+    src: url('TF Wasted Growth Blur.eot'); /* IE9 Compat Modes */
+    src: url('TF Wasted Growth Blur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TF Wasted Growth Blur.woff') format('woff'), /* Modern Browsers */
+         url('TF Wasted Growth Blur.woff2') format('woff2'), /* Modern Browsers */
+         url('TF Wasted Growth Blur.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
