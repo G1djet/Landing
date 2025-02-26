@@ -1,8 +1,5 @@
 /* Общие стили */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+
 
 *,
 *::after,
@@ -11,21 +8,44 @@ body {
     padding: 0;
     margin: 0;
 }
+@import url("C:\more\landing\fontsSink.ttf");
+@import url("C:\more\landing\gordqucikblack-p7erv.otf");
+@import url("C:\more\landing\acid-tm.otf");
 
 @font-face {
-    font-family: Sink; 
-    src: url(C:\more\landing\fonts\Sink\Sink.ttf) format("truetype"); 
-    font-family: GordQuick; 
-    src: url(C:\more\landing\fonts\GordQuick\gordqucikblack-p7erv.otf);
-
+    font-family: "Sink"; 
+    src: url("Sink.ttf"); 
+    font-family: "GordQuick"; 
+    src: url("gordqucikblack-p7erv.otf") ; 
+    font-family: "Acid"; 
+    src: url("acid-tm.otf");
 }
 
+body {
+    margin: 0;
+}
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
 }
 
-.container{
+.div.background {
+    z-index: -1;
+    margin-left: 0;
+  }
+  
+.background  img {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  } 
+
+.navbar-container{
     max-width: 100%;
     margin: 0pt 30pt 0pt 20pt;
     flex: space-between;
@@ -33,16 +53,13 @@ body {
 }
 
 .navbar{
-    /* box-shadow: 0px 5px 10px 0px #aaa; */
     border-bottom: 3px solid black;
     position: fixed;
     width: 100%;
     height: 32pt;
     background: #fff;
     color: #000;
-    font-family: GordQuick;
-    /* opacity: 0.85; */
-    /* z-index: 100; */
+    font-family: "Acid";
 }
 
 .navbar-container{
@@ -60,9 +77,9 @@ body {
 .nav-button{
     color: black;
     font-size: 15px;
-    padding: 3px 15px; /* Внутренние отступы */
-    border: 3px solid black; /* Черная граница */
-    border-radius: 45px; /* Овальная форма (закругленные углы) */
+    padding: 3px 15px; 
+    border: 3px solid black;
+    border-radius: 45px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -75,9 +92,9 @@ body {
     background-color: rgb(19, 167, 0);
     color: black;
     font-size: 15px;
-    padding: 3px 15px; /* Внутренние отступы */
-    border: 2px solid black; /* Черная граница */
-    border-radius: 45px; /* Овальная форма (закругленные углы) */
+    padding: 3px 15px; 
+    border: 2px solid black; 
+    border-radius: 45px; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -95,7 +112,6 @@ body {
     list-style: none;
     margin-left: 7pt;
     margin-right: 7px;
-    /* font-size: 1rem; */
 }
 
 .menu-items li:hover{
@@ -109,28 +125,107 @@ body {
     font-weight: 500;
 }
 
-.container-assortipanel{
-    display: flex;
-    justify-content: space-between;
-}
-
 .assortipanel{
-    border: 10px rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
 }
 
-.assortipanel img{
-    /* border: 2px solid black; */
-    border-radius: 40px;
+.duo{
+    width: 25%;
+    display: flex;
+}
+
+/*_____________Кнопки с банками________________*/
+.assortipanel1{
+    width: 50%;
+    background-color: #ADACAC;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 40px 40px 0px 0px;
+}
+.assortipanel1 img{
     width: 100px;
     height: 100px;
-    border: 3px rgb(0, 0, 0);
-
 }
+.assortipanel2{
+    width: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px 40px 0px 0px;
+}
+.assortipanel2 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel3{
+    width: 50%;
+    background-color: #8BFFF9;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel3 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel4{
+    width: 50%;
+    background-color: #7CFFA3;
+    display: flex;
+    flex-direction: row;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel4 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel5{
+    width: 50%;
+    background-color: #B4A93A;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel5 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel6{
+    width: 50%;
+    background-color: #FFA24B;
+    display: flex;
+    flex-direction: row;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel6 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel7{
+    width: 50%;
+    background-color: #185496;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel7 img{
+    width: 100px;
+    height: 100px;
+}
+.assortipanel8{
+    width: 50%;
+    background-color: #D83131;
+    display: flex;
+    flex-direction: row;
+    border-radius:  40px 40px 0px 0px;
+}
+.assortipanel8 img{
+    width: 100px;
+    height: 100px;
+}
+/*_____________________________________*/
 
-
-/* .navbar a:hover{
-    color: #117964;
-} */
 
 
 /* @media (max-width: 768px){
@@ -249,7 +344,7 @@ body {
 } */
 
 /* Секции (экраны) */
-section {
+/* section {
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -257,23 +352,51 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} */
 
 /* Цвета для каждого экрана */
 #screen1 {
     background-color: #f4f4f4;
+    height: 100vh;
+    /* padding: 20px; */
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #screen2 {
     background-color: #e2e2e2;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #screen3 {
     background-color: #d1d1d1;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #screen4 {
     background-color: #c0c0c0;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
 }
 
 /* Футер */
