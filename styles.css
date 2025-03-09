@@ -6,9 +6,9 @@
     padding: 0;
     margin: 0;
 }
-@import url("C:\more\landing\fontsSink.ttf");
-@import url("C:\more\landing\gordqucikblack-p7erv.otf");
-@import url("C:\more\landing\acid-tm.otf");
+@import url("C:/more/landing/fontsSink.ttf");
+@import url("C:/more/landing/gordqucikblack-p7erv.otf");
+@import url("C:/more/landing/acid-tm.otf");
 
 @font-face {
     font-family: "Sink"; 
@@ -28,26 +28,10 @@ body {
     display: none;
 }
 
-.background {
-    z-index: 0;
-    margin-left: 0;
-    justify-content: center;
-    display: flex;
-  }
-  
-.background  img {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: -1;
-  } 
+
+
 
 .navbar-container{
-
     max-width: 100%;
     margin: 0pt 30pt 0pt 20pt;
     flex: space-between;
@@ -83,6 +67,9 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.logo{
+    order: 1;
+}
 .logo img{
     height: 2em;
 }
@@ -102,9 +89,7 @@ body {
     color: #ffffff;
 }
 
-.logo{
-    order: 1;
-}
+
 
 .menu-items li{
     list-style: none;
@@ -122,43 +107,14 @@ body {
     text-decoration: none;
     font-weight: 500;
 }
-/* 
-
-.maincans{
-
-} */
-
-.star{
-    position: relative;
-    width: 40vw;
-    align-items: center;
-}
-
-.maincan {
-    position: relative;
-    align-items: center;
-    height: 85vh;
-}
-
-.can2 img{
-    position: relative;
-}
-
-.can3 img{
-    position: relative;
-}
-.can4 img{
-    position: relative;
-}
-.can5 img{
-    position: relative;
-}
-
 
 .assortipanel{
-    position: absolute;
-    width: 100%;
-    display: flex;
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+  width: 100%;
+  display: flex;
+  z-index: 9999;
 }
 
 .duo{
@@ -265,6 +221,94 @@ body {
     height: 100px;
 }
 /*_____________________________________*/
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url('media/background2.jpg'); 
+    background-position: center;
+  }
+  
+/* .background  img {
+    height: 10%;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  }  */
+
+.maincans {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.star {
+    align-content: center;
+    width: 110vh;
+    height: 70vh;
+    left: 25vw;
+    top:10vh ;
+    background-image: url('media/star.png'); 
+    z-index: 1;
+}
+
+
+.maincan {
+    width: 80vh;
+    height: 70vh;
+    top: 10vh;
+    left: 30vw;
+    background-image: url('cans/Stickers.png'); 
+    z-index: 10;
+}
+
+.can2 {
+    width: 45vh;
+    height: 60vh;
+    top: 15vh;
+    left: 17vw;
+    background-image: url('cans/cowboy.png'); 
+    transform: rotate(-27deg);
+    z-index: 9;
+}
+
+.can3 {
+    width: 40vh;
+    height: 60vh;
+    top: 15vh;
+    right: 22vw;
+    background-image: url('cans/ornament.png'); 
+    transform: rotate(32deg);
+    z-index: 8;
+}
+
+.can4 { 
+    height: 25vh;
+    width: 10vh;
+    top: 25vh;
+    right: 37vw;
+    background-image: url('cans/grapefruit.png'); 
+    transform: rotate(-35deg);
+    z-index: 7;
+}
+
+.can5 {
+    height: 30vh;
+    width: 15vh;
+    top: 25vh;
+    left: 34vw;
+    background-image: url('cans/whale.png'); 
+    transform: rotate(20deg);
+    z-index: 6;
+}
+
 
 
 
