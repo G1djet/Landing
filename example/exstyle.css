@@ -1,6 +1,25 @@
+
+
+@import url("C:/more/landing/CrustAce.otf");
+@import url("C:/more/landing/acid-tm.otf");
+@font-face {
+    font-family: 'CrustAce'; 
+    src: url("C:/more/landing/example/CrustAce.otf"); 
+    font-family: "GordQuick"; 
+    src: url("gordqucikblack-p7erv.otf") ; 
+    font-family: "Acid"; 
+    src: url("acid-tm.otf");
+}
+@font-face {
+	font-family: 'CrustAce'; 
+	src: local('FTCrustAce-FREE'),
+		url('example/CrustAce.otf'); 
+}
+
 body {
     position: relative;
     margin: 0;
+    font-family: 'CrustAce';
 }
 
 .section{
@@ -91,8 +110,23 @@ body {
 }
 
 .name{
-    height: 10vh;
+    margin: 0;
+    height: 15vh;
     width: 100vw;
     position: relative;
+    font-family: 'CrustAce';
+}
 
+.name p{
+    font-family: 'CrustAce';
+    font-size: 12em;
+    margin: 0;
+}
+
+.maininfo{
+    display: flex;
+}
+
+.info{
+    
 }
