@@ -1,4 +1,5 @@
 
+
 *,
 *::after,
 *::before{
@@ -70,6 +71,7 @@ body {
 .logo{
     order: 1;
 }
+
 .logo img{
     height: 2em;
 }
@@ -261,17 +263,17 @@ body {
 
 
 .maincan {
-    width: 80vh;
-    height: 70vh;
-    top: 10vh;
-    left: 30vw;
+    height: 45vh;
+    width: 20vh;
+    top: 50%;
+    left: 50%;
     background-image: url('cans/Stickers.png'); 
     z-index: 10;
 }
 
 .can2 {
-    width: 45vh;
-    height: 60vh;
+    height: 45vh;
+    width: 20vh;
     top: 15vh;
     left: 17vw;
     background-image: url('cans/cowboy.png'); 
@@ -280,8 +282,8 @@ body {
 }
 
 .can3 {
-    width: 40vh;
-    height: 60vh;
+    height: 50vh;
+    width: 20vh;
     top: 15vh;
     right: 22vw;
     background-image: url('cans/ornament.png'); 
@@ -290,7 +292,7 @@ body {
 }
 
 .can4 { 
-    height: 25vh;
+    height: 20vh;
     width: 10vh;
     top: 25vh;
     right: 37vw;
@@ -300,8 +302,8 @@ body {
 }
 
 .can5 {
-    height: 30vh;
-    width: 15vh;
+    height: 20vh;
+    width: 10vh;
     top: 25vh;
     left: 34vw;
     background-image: url('cans/whale.png'); 
@@ -450,6 +452,10 @@ body {
     justify-content: center;
     flex-direction: column;
 } */
+
+.section{
+    height: 100vh;
+}
 
 /* Цвета для каждого экрана */
 #screen1 {
